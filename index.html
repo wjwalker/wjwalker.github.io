@@ -7,7 +7,11 @@
 </head>
 
 <body>
+    <script src="https://cdn.bootcss.com/vConsole/3.3.4/vconsole.min.js"></script>
     <script>
+        // init vConsole
+        var vConsole = new VConsole();
+
         function statusChangeCallback(response) { // Called with the results from FB.getLoginStatus().
             console.log('statusChangeCallback');
             console.log(response); // The current login status of the person.
