@@ -22,8 +22,8 @@
         // init vConsole
         var vConsole = new VConsole();
 
-        window.onload = function() {
-            document.getElementById('test').onclick = function() {
+        window.onload = function () {
+            document.getElementById('test').onclick = function () {
                 window.location.reload()
             }
         }
@@ -34,9 +34,11 @@
             if (response.status === 'connected') { // Logged into your webpage and Facebook.
                 testAPI();
             } else { // Not logged into your webpage or we are unable to tell.
-                FB.login()
-                document.getElementById('status').innerHTML = 'Please log ' +
-                    'into this webpage.';
+                // FB.login()
+                window.location.href =
+                    'https://m.facebook.com/login.php?skip_api_login=1&api_key=183536899614428&kid_directed_site=0&app_id=183536899614428&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv6.0%2Fdialog%2Foauth%3Fapp_id%3D183536899614428%26cbt%3D1584947850713%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fconnect%252Fxd_arbiter.php%253Fversion%253D46%2523cb%253Df23458b44ae959c%2526domain%253Dwjwalker.github.io%2526origin%253Dhttps%25253A%25252F%25252Fwjwalker.github.io%25252Ff30b75a0d5fd0f8%2526relation%253Dopener%26client_id%3D183536899614428%26display%3Dtouch%26domain%3Dwjwalker.github.io%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwjwalker.github.io%252F%26locale%3Den_US%26logger_id%3Df3d380667e631b%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fconnect%252Fxd_arbiter.php%253Fversion%253D46%2523cb%253Df6c485fa0034f4%2526domain%253Dwjwalker.github.io%2526origin%253Dhttps%25253A%25252F%25252Fwjwalker.github.io%25252Ff30b75a0d5fd0f8%2526relation%253Dopener%2526frame%253Df6fc840bfbe45%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26sdk%3Djoey%26version%3Dv6.0%26ret%3Dlogin%26fbapp_pres%3D0&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df6c485fa0034f4%26domain%3Dwjwalker.github.io%26origin%3Dhttps%253A%252F%252Fwjwalker.github.io%252Ff30b75a0d5fd0f8%26relation%3Dopener%26frame%3Df6fc840bfbe45%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=zh_CN&pl_dbl=0&refsrc=https%3A%2F%2Fm.facebook.com%2Flogin.php&_rdr'
+                // document.getElementById('status').innerHTML = 'Please log ' +
+                //     'into this webpage.';
             }
         }
 
