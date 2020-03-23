@@ -22,6 +22,12 @@
         // init vConsole
         var vConsole = new VConsole();
 
+        window.onload = function() {
+            document.getElementById('test').onclick = function() {
+                window.location.reload()
+            }
+        }
+
         function statusChangeCallback(response) { // Called with the results from FB.getLoginStatus().
             console.log('statusChangeCallback');
             console.log(response); // The current login status of the person.
@@ -85,6 +91,8 @@
 
     <div id="status">
     </div>
+
+    <button id="test">click me to reload</button>
 
 </body>
 
